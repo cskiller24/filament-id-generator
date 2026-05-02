@@ -1,0 +1,52 @@
+:root {
+  --bg-ink: #152028;
+  --bg-deep: #0f1720;
+  --bg-moss: #2f3b2a;
+  --panel: #f4efe2;
+  --panel-soft: #e8dcc4;
+  --frame: #fbf7ee;
+  --text-main: #111827;
+  --text-soft: #334155;
+  --accent: #0f766e;
+  --accent-strong: #0c5f59;
+  --accent-warm: #d97706;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#editor-app {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  color: var(--text-main);
+  font-family: 'Manrope', sans-serif;
+  background:
+    radial-gradient(1200px 600px at 5% 5%, #1f2f3a 0%, transparent 62%),
+    radial-gradient(900px 420px at 95% 20%, var(--bg-moss) 0%, transparent 56%),
+    linear-gradient(180deg, var(--bg-ink), var(--bg-deep));
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image: radial-gradient(circle at 1px 1px, #f8fafc 1px, transparent 0);
+  background-size: 3px 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+  letter-spacing: 0.01em;
+}

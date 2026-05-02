@@ -19,7 +19,7 @@ const defaultOptions = {
     },
     bundle: true,
     mainFields: ['module', 'main'],
-    platform: 'neutral',
+    platform: 'browser',
     sourcemap: isDev ? 'inline' : false,
     sourcesContent: isDev,
     treeShaking: true,
@@ -46,7 +46,15 @@ const defaultOptions = {
 compile({
     ...defaultOptions,
     entryPoints: ['./resources/js/index.js'],
-    outfile: './resources/dist/skeleton.js',
+    outfile: './resources/dist/filament-id-generator.js',
 }).then(() => {
-    console.log(`Build completed for skeleton.js`)
+    console.log(`Build completed for filament-id-generator.js`)
+})
+
+compile({
+    ...defaultOptions,
+    entryPoints: ['./resources/js/editor/main.js'],
+    outfile: './resources/dist/editor.js',
+}).then(() => {
+    console.log(`Build completed for editor.js`)
 })
