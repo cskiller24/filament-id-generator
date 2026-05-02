@@ -17,7 +17,11 @@ use Throwable;
 
 class RenderGeneratedIdJob implements ShouldQueue
 {
-    use Batchable, Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+    use Batchable;
+    use Dispatchable;
+    use InteractsWithQueue;
+    use Queueable;
+    use SerializesModels;
 
     public function __construct(
         public int $idGenerationBatchId,

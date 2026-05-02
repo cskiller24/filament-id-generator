@@ -31,7 +31,7 @@ class IdTemplateResource extends Resource
 {
     protected static ?string $model = IdTemplate::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedIdentification;
+    protected static string | BackedEnum | null $navigationIcon = Heroicon::OutlinedIdentification;
 
     public static function getNavigationGroup(): ?string
     {

@@ -20,7 +20,7 @@ class IdGenerationBatchResource extends Resource
 {
     protected static ?string $model = IdGenerationBatch::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedArchiveBox;
+    protected static string | BackedEnum | null $navigationIcon = Heroicon::OutlinedArchiveBox;
 
     public static function getNavigationGroup(): ?string
     {

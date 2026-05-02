@@ -27,7 +27,7 @@ class EditIdTemplateLayout extends Page
 
     public string $activeSide = '';
 
-    public function mount(int|string $record): void
+    public function mount(int | string $record): void
     {
         $this->record = $this->resolveRecord($record);
         $template = $this->getRecord()->load('sides.fields');

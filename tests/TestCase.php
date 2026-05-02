@@ -5,6 +5,8 @@ namespace Cskiller\FilamentIdGenerator\Tests;
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Cskiller\FilamentIdGenerator\FilamentIdGeneratorServiceProvider;
+use Cskiller\FilamentIdGenerator\Tests\Fixtures\TestIdDataSourceAdapter;
+use Cskiller\FilamentIdGenerator\Tests\Fixtures\TestIdSourceRecord;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
@@ -19,8 +21,6 @@ use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
-use Cskiller\FilamentIdGenerator\Tests\Fixtures\TestIdDataSourceAdapter;
-use Cskiller\FilamentIdGenerator\Tests\Fixtures\TestIdSourceRecord;
 
 class TestCase extends Orchestra
 {
@@ -70,4 +70,3 @@ class TestCase extends Orchestra
         $this->loadMigrationsFrom(__DIR__ . '/Fixtures/database/migrations');
     }
 }
-

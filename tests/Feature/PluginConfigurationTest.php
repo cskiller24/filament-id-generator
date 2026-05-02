@@ -2,8 +2,8 @@
 
 namespace Cskiller\FilamentIdGenerator\Tests\Feature;
 
-use Cskiller\FilamentIdGenerator\Tests\TestCase;
 use Cskiller\FilamentIdGenerator\Tests\Fixtures\TestIdSourceRecord;
+use Cskiller\FilamentIdGenerator\Tests\TestCase;
 
 class PluginConfigurationTest extends TestCase
 {

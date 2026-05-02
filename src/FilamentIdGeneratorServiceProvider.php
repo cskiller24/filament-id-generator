@@ -3,6 +3,7 @@
 namespace Cskiller\FilamentIdGenerator;
 
 use Cskiller\FilamentIdGenerator\Support\IdDataSourceRegistry;
+use Cskiller\FilamentIdGenerator\Testing\TestsFilamentIdGenerator;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
@@ -13,7 +14,6 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Cskiller\FilamentIdGenerator\Testing\TestsFilamentIdGenerator;
 
 class FilamentIdGeneratorServiceProvider extends PackageServiceProvider
 {
@@ -122,5 +122,3 @@ class FilamentIdGeneratorServiceProvider extends PackageServiceProvider
         ];
     }
 }
-
-
